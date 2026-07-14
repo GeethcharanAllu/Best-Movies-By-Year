@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Movies by Year</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Best Movies by Year</h1>
+            <div class="year-selector">
+                <label for="year">Select Year:</label>
+                <select id="year">
+                    <!-- Will be populated with JavaScript -->
+                </select>
+            </div>
+        </header>
+        
+        <main>
+            <div class="movies-grid" id="movies-container">
+                <!-- Movie cards will be populated here -->
+            </div>
+        </main>
+
+        <!-- Modal for movie details -->
+        <div class="modal" id="movie-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="movie-details">
+                    <div class="movie-header">
+                        <img id="modal-poster" src="" alt="Movie Poster">
+                        <div class="movie-info">
+                            <h2 id="modal-title"></h2>
+                            <p id="modal-year" class="movie-meta"></p>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span id="modal-rating"></span>/10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-description">
+                        <h3>Overview</h3>
+                        <p id="modal-overview"></p>
+                    </div>
+                    <div class="movie-reviews">
+                        <h3>Reviews</h3>
+                        <div id="modal-reviews"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
